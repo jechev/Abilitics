@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Add comments in HTML Page</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <script src="node_modules/interactjs/dist/interact.min.js"></script>
+    </head>
+    <body>
+        <h1>This is demo page with javascript for adding comments in the static page</h1>
+        <p>In a web page with static HTML content inside,
+            user should be able to click anywhere on the page and add a comment. When page is refreshed, the
+            annotations should be preserved. User should be able to edit and delete the comments and
+            annotations.</p>
+        <p><strong>Single click functionalities</strong></p>
+        <ul>
+            <li>Click anywhere - open form for add comment</li>
+            <li> Click and hold the mouse on green point - you can drag point</li>
+        </ul>
+        <p><strong> Double click functionalities</strong> </p>
+        <ul>
+            <li>Double click point -it will open existed comment and you can edit/delete the comment</li>
+            <li>Double click form area or textarea - the form will close</li>
+        </ul>
+        <hr>
+        <p>Go to my GithHub Profile <a href="https://github.com/jechev" target="_blank">GithHub profile</a></p>
+        <p>Comment module &#169;, 2018</p>
+        <form class="commentForm" name="commentForm" id="commentForm">
+            <textarea name="comment" rows="5" id="commentInput"></textarea>
+            <input type="hidden" name="commentId" id="commentId" value="">
+            <button type="button" id="deleteComment">Delete</button>
+            <button type="button" id="editComment">Edit</button>
+            <button type=button id="submitComment">Submit</button>
+        </form>
+
+        <script src="scripts/CommentAndPointService.js"></script>
+    </body>
+</html>

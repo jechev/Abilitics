@@ -1,0 +1,38 @@
+.commentForm {
+    position: absolute;
+    border-style: solid;
+    background-color: grey;
+    border-width: 1px;
+    display: none;
+    z-index: 9000;
+
+
+}
+.points{
+    width: 20px;
+    height: 20px;
+    background:rgb(0, 187, 47);
+    border-radius: 50px;
+    position: absolute;
+    z-index: 5000;
+}
+#commentInput{
+    background-color: grey;
+}
+#submitComment{
+    background-color: green;
+    border: 5px;
+    border-radius: 20px;
+}
+#editComment{
+    display: none;
+    background-color: rgb(11, 180, 223);
+    border: 5px;
+    border-radius: 20px;
+}
+#deleteComment{
+    display: none;
+    background-color: red;
+    border: 5px;
+    border-radius: 20px; 
+}
